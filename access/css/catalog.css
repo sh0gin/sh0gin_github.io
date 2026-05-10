@@ -1,0 +1,100 @@
+.filter {
+    min-width: 250px;
+    height: 550px;
+    border: 1px solid var(--grey-color);
+    border-radius: 20px;
+}
+
+.filter-and-catalog {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-catalog {
+    display: none;
+}
+
+.label {
+    position: relative;
+    padding: 13px 60px;
+}
+
+.input-catalog:checked+span::before {
+    content: "✔";
+    position: absolute;
+    left: 10px;
+    color: var(--blue-color)
+}
+
+.filter-mobile {
+    display: none;
+}
+
+
+.our-course {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        display: none;
+    }
+
+    .filter-and-catalog {
+        flex-direction: column;
+    }
+
+    .selector {
+        width: 100%;
+        height: 55px;
+        border-radius: 20px;
+        border: none;
+        border: 2px solid var(--lightblue-color);
+        background-color: white;
+    }
+
+    .filter-mobile {
+        display: block;
+        color: black;
+    }
+}
+
+@media print {
+    html {
+        filter: grayscale(100%);
+    }
+
+    @page {
+        size: A4 landscape
+    }
+
+    header,
+    footer {
+        display: none;
+    }
+
+    .general-title-course {
+        display: none;
+    }
+
+    .our-course {
+        display: block;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .index-catalog {
+        width: 60%;
+        margin-inline: auto;
+    }
+}

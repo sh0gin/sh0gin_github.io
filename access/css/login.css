@@ -1,0 +1,37 @@
+.form {
+    width: 80%;
+    gap: 28px;
+}
+
+label {
+    color: var(--blue-color);
+    font-size: 1.5rem;
+}
+
+.input-elem {
+    margin-top: 8px;
+    height: 55px;
+    border-radius: 20px;
+    border: 2px solid var(--lightblue-color);
+    background-color: #044cb823;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.input-elem:hover {
+    border-bottom: 2px solid var(--blue-color)
+}
+
+.input-elem:focus {
+    border-bottom: 2px solid var(--blue-color)
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--grey-color);
+}
+
+.fogget-password {
+    text-align: center;
+}

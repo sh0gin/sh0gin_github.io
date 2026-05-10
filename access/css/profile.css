@@ -1,0 +1,96 @@
+.window-profile {
+    width: 75%;
+    height: auto;
+    border: 1px solid var(--blue-color);
+    border-radius: 20px;
+}
+
+.content-profile {
+    gap: 75px;
+}
+
+@media (max-width: 768px) {
+    .window-profile {
+        width: 100%;
+    }
+
+    .content-profile {
+        flex-direction: column;
+    }
+}
+
+.face {
+    background-image: url('../img/face.png');
+    width: 170px;
+    height: 170px;
+}
+
+.my-face {
+    background-image: url('../img/face.jpg');
+    width: 170px;
+    height: 170px;
+    border-radius: 20px;
+    border: 2px solid var(--lightblue-color);
+    box-shadow: 0 0 20px 8px var(--lightblue-color);
+    transition: .3s;
+}
+
+.my-face:hover {
+    transform: scale(1.1);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.sun {
+    background-image: url('../img/sun.png');
+    width: 30px;
+    height: 30px;
+}
+
+.moon {
+    background-image: url('../img/moon.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.bg-moon {
+    background-color: var(--blue-color);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bg-sun {
+    background-color: var(--white-color);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.size-theme {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.settings-container {
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
