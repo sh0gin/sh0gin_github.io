@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="access/css/base.css">
-    <link rel="stylesheet" href="access/css/index.css">
-    <link rel="stylesheet" href="access/css/register.css">
+    <link rel="stylesheet" href="access/css/light.css">
+    <link rel="stylesheet" href="access/css/register-light.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <div class="b-img logo"></div>
             <ul class="content-header">
                 <li class="h-elem">
-                    <a href="index-light.html" class="width-100 link-header active">
+                    <a href="index-light.html" class="width-100 link-header">
                         Главная
                     </a>
                 </li>
@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li class="h-elem">
-                    <a href="register-light.html" class="width-100 link-header">
+                    <a href="register-light.html" class="width-100 link-header active">
                         Регистрация
                     </a>
                 </li>
@@ -53,37 +53,42 @@
                             </label>
                             <label class="d-flex col width-100">
                                 Пароль
-                                <input type="password" class="input-elem width-100 success" placeholder="Пароль">
+                                <input type="password" class="input-elem width-100 success" placeholder="Пароль" value="12365512Ee">
                                 <span class="green">Всё верно</span>
                             </label>
                             <label class="d-flex col width-100">
                                 Фамилия
                                 <input type="text" class="input-elem width-100" placeholder="Фамилия">
+                                <span class="green">⠀</span>
                             </label>
                             <label class="d-flex col width-100">
                                 Имя
                                 <input type="text" class="input-elem width-100" placeholder="Имя">
+                                <span class="green">⠀</span>
                             </label>
                         </div>
                         <div class="one-input-block">
                             <label class="d-flex col width-100">
                                 Дата рождения
                                 <input type="date" class="input-elem width-100 py15">
+                                <span class="green">⠀</span>
                             </label>
                             <label class="d-flex col width-100">
                                 Номер телефона
                                 <input type="text" class="input-elem width-100" placeholder="Номер телефона">
+                                <span class="green">⠀</span>
                             </label>
                             <label class="d-flex col width-100">
                                 Повтор пароля
                                 <input type="password" class="input-elem width-100" placeholder="Повтор пароля">
+                                <span class="green">⠀</span>
                             </label>
 
                         </div>
                     </div>
                     <div class="fogget-password width-100">
-                        <input type="checkbox">
-                        Согласен на обработку персональных данных
+                        <input type="checkbox" id="check">
+                        <label for="check" class="black text">Согласен на обработку персональных данных</label>
                         <div class="line mt10"></div>
                     </div>
                     <button type="submit" class="general-button register-type">Зарегистрироваться</button>

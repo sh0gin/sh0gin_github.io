@@ -31,6 +31,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.black {
+    color: black;
+}
+
+
+
 .width-90 {
     width: 90%;
     margin-inline: auto;
@@ -134,6 +140,10 @@ button:hover {
     }
 }
 
+.text {
+    font-size: var(--text);
+}
+
 .white {
     color: white !important;
 }
@@ -164,7 +174,11 @@ button:hover {
 }
 
 .minecraft {
-    background: url('../img/face.jpg')
+    background: url('../img/globe.png')
+}
+
+.minecraft-black {
+    background-image: url('../img/blobe-black.png');
 }
 
 .active {

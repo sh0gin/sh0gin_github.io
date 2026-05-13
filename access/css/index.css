@@ -1,16 +1,22 @@
 header .navbar-dark {
-    background: linear-gradient(-45deg, #6e48aa, #9d50bb, #4776E6, #8E54E9);
+    /* background: linear-gradient(-45deg, #6e48aa, #9d50bb, #4776E6, #8E54E9);
     background-size: 400% 400%;
-    animation: gradientWave 8s ease infinite;
+    animation: gradientWave 8s ease infinite; */
     font-family: Andale Mono, monospace;
 }
 
 footer {
-    background: linear-gradient(-45deg, #6e48aa, #9d50bb, #4776E6, #8E54E9);
+    /* background: linear-gradient(-45deg, #6e48aa, #9d50bb, #4776E6, #8E54E9);
     background-size: 400% 400%;
-    animation: gradientWave 8s ease infinite;
+    animation: gradientWave 8s ease infinite; */
     font-family: Andale Mono, monospace;
 }
+
+.four-main {
+    background-color: var(--black-color) 
+}
+
+
 
 @keyframes gradientWave {
     0% {
@@ -292,7 +298,7 @@ footer {
 .size-add {
     width: 250px;
     height: 232px;
-    box-shadow: 0 0 20px 8px rgba(79, 253, 26, 0.705);
+    box-shadow: 0 0 20px 8px rgba(26, 162, 253, 0.705);
     border-radius: 20px;
 }
 
